@@ -19,7 +19,7 @@
     width: 80px;
     background-color: #0077ff;
     padding: 0.4rem 0.8rem;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
 .sidebar.active ~ .main-content {
@@ -138,4 +138,15 @@
 
 .sidebar.active ul li .tooltip{
     display: none;
+}
+
+.main-content {
+    position: relative;
+    background-color: black;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
 }
