@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTC+2">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> Portfolio </title>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-        <img src="" width="200" height="200" alt="EN COURS DE TRAVAUX" />
-        <hr />
-        <h2><p title="A très bientot !">En conception </p></h2>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="barre"></div>
-            <div class="haut">
+        <div class="sidebar">
+            <div class="top">
                 <div class="logo">
                     <i class="bx bx-search-alt"></i>
                     <span>Portfolio</span>
@@ -19,16 +17,64 @@
                 <i class="bx bx-menu" id="btn"></i>
             </div>
             <div class="user">
-                <img src="" alt="Brian" class="user-img">
+                <img src="MULAWKA_Brian.jpg" alt="me" class="user-img">
                 <div>
-                    <p class="bold">Brian M.</p>
-                    <p>Développeur WebFullstack</p>
+                    <p class="bold">Mulawka B.</p>
+                    <p>Développeur Web Fullstack</p>
                 </div>
             </div>
-            <ul></ul>
-
-        <p> Bienvenue ! </p>
-        <a href="https://github.com/MulawkB/portfolio" style="color:rgb(255, 7, 7)"> Retour a Github. </a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-grid-alt"></i>
+                        <span class="nav-item">Présentation</span>
+                    </a>
+                    <span class="tooltip">Présentation</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-file-blank' ></i>
+                        <span class="nav-item">CV</span>
+                    </a>
+                    <span class="tooltip">CV</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-graduation' ></i>
+                        <span class="nav-item">études</span>
+                    </a>
+                    <span class="tooltip">études</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-list-ul'></i>
+                        <span class="nav-item">Projets</span>
+                    </a>
+                    <span class="tooltip">Projets</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-message-rounded-dots' ></i>
+                        <span class="nav-item">Contacts</span>
+                    </a>
+                    <span class="tooltip">Contacts</span>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <h1>Portfolio</h1>
+            </div>
+        </div>    
     </body>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        };
+    </script>
 
 </html>
