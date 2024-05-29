@@ -7,8 +7,8 @@
 
 .user-img {
     width: 50px;
-    border-radius: 100%;
-    border: 1px solid #70cbff;
+    border-radius: 40%;
+    border: 1px solid #fff;
 }
 
 .sidebar {
@@ -24,17 +24,17 @@
 
 .sidebar.active ~ .main-content {
     left: 250px;
-    width: calc(100% -250px);
+    width: calc(100% - 250px);
 }
 
-.sidebar.active{
+.sidebar.active {
     width: 250px;
 }
 
-.sidebar #btn{
+.sidebar #btn {
     position: absolute;
-    color: black;
-    top: .4rem;
+    color: #fff;
+    top: 0.4rem;
     left: 50%;
     font-size: 1.2rem;
     line-height: 50px;
@@ -47,7 +47,7 @@
 }
 
 .sidebar .top .logo {
-    color: aliceblue;
+    color: #fff;
     display: flex;
     height: 50px;
     width: 100%;
@@ -72,7 +72,7 @@
 }
 
 .user p {
-    color: aqua;
+    color: #ffffff;
     opacity: 1;
     margin-left: 1rem;
 }
@@ -93,14 +93,22 @@
     position: relative;
     list-style-type: none;
     height: 50px;
-    width: 90px;
+    width: 90%;
     margin:  0.8rem auto;
     line-height: 50px;
 }
 
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
 .sidebar ul li a:hover {
-    background-color: antiquewhite;
-    color: black;
+    background-color: #fff;
+    color: #000000;
 }
 
 .sidebar ul li a i {
@@ -142,11 +150,17 @@
 
 .main-content {
     position: relative;
-    background-color: black;
+    background-color: #eeeeee; /* website bg */
     min-height: 100vh;
     top: 0;
     left: 80px;
     transition: all 0.5s ease;
     width: calc(100% - 80px);
     padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
 }
